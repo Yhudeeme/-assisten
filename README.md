@@ -7,7 +7,7 @@ Overview
 - Solution
 - Implementation details
 - Endpoints
-- Nextpoints
+- Nextsteps
 - Contributor
 
 ## Overview
