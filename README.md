@@ -35,8 +35,3 @@ The application is implemented using CSS, HTML, and JAVASCRIPT and it was genera
 
 ## Contributors
 - [Mercy Chikezie](https://github.com/yhudeeme/-assisten)
-- 
-<!---
-Yhudeeme/Yhudeeme is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
