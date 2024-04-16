@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+               <title>Dalhousie Admission Guide</title>
+               <style> 
+               body { font-family: Arial, sans-serif; background-color: #f2f2f2;  padding: 50px; }     
+               h1, p { text-align: center;}
+                .requirements {
+                    list-style-type: none; 
+                    padding: 0;  margin: 20px 0;
+                    }      
+                    .requirements li { background-color: #4caf50;
+                        margin: 5px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        color: white;        
+                        }        
+                        .submit {
+                            background-color: #008CBA;
+                            color: white;
+                            padding: 15px 32px;
+                            font-size: 16px;
+                            text-align:center;
+                            text-decoration: none;
+                            display: inline-block;
+                            }
+                            img {
+                                width: 100%;
+                                height: auto;
+                                }
+
+            .list-item {
+                cursor: pointer;
+                list-style-type: none;
+                margin-bottom: 10px;
+            }
+            .details {
+                display: none;
+                margin-left: 20px;
+                margin-top: 15px;
+            }
+                                
+        </style>
+        </head>
+        <body>
+            <h1>Welcome to Dalhousie Admission Guide</h1>   
+            <h2>Here are your admission requirements (click for deatils):</h2>
+            <ul class="requirements" id="myList">
+                <li class="list-item">High School Certificate
+                  <div class="details">High school requirements typically entail completing a recognized secondary school curriculum with a competitive grade point average (GPA). This often includes courses in English, mathematics, science, social sciences, and languages.</div>
+                </li>
+                <li class="list-item">Standardized test (for International students)
+                  <div class="details">Proficiency in English through standardized tests such as the International English Language Testing System (IELTS) or the Test of English as a Foreign Language (TOEFL). These tests assess applicants' proficiency in reading, writing, speaking, and listening comprehension.</div>
+                </li>
+                <li class="list-item">Application form
+                  <div class="details">The application form for Dalhousie University admission will request for comprehensive personal and academic information from applicants. This may include details about educational background, extracurricular activities, work experience, and references</div>
+                </li>
+                <li class="list-item">Statement of purpose
+                    <div class="details">A well-crafted SOP should highlight the applicant's academic interests, relevant experiences, career goals, and how they align with the university's values and offerings. It should also showcase the applicant's writing skills and ability to communicate effectively.</div>
+                  </li>
+              </ul>
+
+              <a class="submit" href="#" onclick="return submitApplication()">Confirm Documents</a>
+
+              <h2>Next Steps (click for deatils):</h2>
+              <ul class="requirements" id="myList">
+                <li class="list-item">Uploaded your documents
+                  <div class="details">Upload your documents through this link: www.bts.com
+                    document size shouldn't exceed 2MB for each section.
+                    Here is a pictorial guideline on how to upload, reduce, or resize your documents.</div>
+                </li>
+                <li class="list-item">Pay admission fee
+                  <div class="details">Click on this URL to pay your application fees: www.demourl.com. Credit cards accepted are Visa, Master, American Express, and Discover.</div>
+                </li>
+                <li class="list-item">Submit application
+                  <div class="details">After submitting your application
+                    You will receive an email stating the timeline of your application
+                    Also if there's any additional requirement, you will get a mail.</div>
+                </li>
+              </ul>
+
+              <h2>University Admission FAQ</h2>
+
+                <ul>
+                <li>
+                    <div class="question">1. What are the admission requirements?</div>
+                    <div class="answer">Admission requirements typically include standardized test scores, high school transcripts, letters of recommendation, and a personal statement.</div>
+                </li>
+                <li>
+                    <div class="question">2. How can I apply?</div>
+                    <div class="answer">You can apply online through the university's admissions portal or by submitting a paper application form.</div>
+                </li>
+                <li>
+                    <div class="question">3. When is the application deadline?</div>
+                    <div class="answer">The application deadline varies depending on the university and program. Please check the university's website for specific deadlines.</div>
+                </li>
+                <li>
+                    <div class="question">4. Is financial aid available?</div>
+                    <div class="answer">Yes, most universities offer financial aid in the form of scholarships, grants, and loans. You can apply for financial aid when you submit your application.</div>
+                </li>
+                <li>
+                    <div class="question">5. Can I transfer credits from another university?</div>
+                    <div class="answer">Yes, many universities accept transfer credits from other accredited institutions. However, the transfer process and the number of credits accepted may vary.</div>
+                </li>
+                </ul>
+
+            <!-- <a class="submit" href="https://dal.ca/admissions" onclick="return submitApplication()">Submit Application</a> -->
+           
+            <!-- <img src="http://placekitten.com/200/300" alt="Nice picture"> -->
+            <script>
+            function submitApplication() {           
+                alert('By Clicking on the "Ok" button, you confirm that you have alll your documents ready. Then you can continue with next steps below.');    
+                return true;      
+            }   
+            
+            var listItems = document.querySelectorAll('.list-item');
+
+            listItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                var details = this.querySelector('.details');
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                } else {
+                    details.style.display = 'none';
+                }
+                });
+            });
+            
+            </script>
+            </body>
+</html>
