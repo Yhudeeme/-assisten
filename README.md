@@ -17,10 +17,10 @@ The Dalhousie University Admissions Assistant is a web application designed to s
 Applying to universities can be overwhelming and complex, especially for students unfamiliar with the process or specific requirements of the institution. The Dalhousie University admissions process involves various documents, deadlines, and criteria, which can be challenging to navigate, particularly for international students.
 
 ## Solution
-The Dalhousie University Admissions Assistant aims to streamline the admissions process by providing a user-friendly platform that offers guidance, support, and resources tailored to each student's individual needs. The application leverages technology to provide personalized recommendations, track document submissions, send deadline reminders, and offer interview and exam preparation materials.
+The Dalhousie University Admissions Assistant aims to streamline the admissions process by providing a user-friendly platform offering guidance, support, and resources tailored to each student's needs. The application leverages technology to provide personalized recommendations, help students submit appropriate documents, send application timelines after submission, and offer informative FAQs.
 
 ## Implementation Details
-The backend of the application is implemented using Python and the Flask web framework. It provides endpoints for user registration, profile updates, and document uploads. The data is stored in a simple in-memory list, which can be replaced with a database in a production environment.
+The application's backend is implemented using Python and the Flask web framework. It provides endpoints for user registration, profile updates, and document uploads. The data is stored in a simple in-memory list, which can be replaced with a database in a production environment.
 
 ## How to use
 1. Clone the repository to your local machine.
